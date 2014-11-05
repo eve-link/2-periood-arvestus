@@ -1,3 +1,11 @@
+<?php 
+$validUsername = "Eve";
+$validPassword = "eveeveeve";
+if ($_SESSION["username"] = $validUsername && $_SESSION["password"] = $validPassword ){ 
+	echo "Kasutajanimi ja parool on õiged." ;}
+else{
+	echo "Kasutajanimi ja/või parool ei klapi." ;}
+?>
 <!DOCTYPE html>
 <html lang="en">
   <head>

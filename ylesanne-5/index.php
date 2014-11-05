@@ -1,3 +1,7 @@
+<?php session_start(); ?>
+<?php $_SESSION["username"] = "Eve"; 
+$_SESSION["password"] = "eveeveeve";  ?>
+
 <!DOCTYPE html>
 <html lang="en">
   <head>
