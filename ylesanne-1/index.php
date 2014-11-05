@@ -9,7 +9,7 @@
 
 	<?php 
 	$username = "Eve";
-	$age= 22;
+	$age = "22";
 	?> 
 	
 	<a href="<?php echo $page_link . '?username=' . $username . '&age=' . $age; ?>">Result</a>

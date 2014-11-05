@@ -9,11 +9,22 @@
 	<a href="index.php">Mine tagasi</a>
 
 	<?php 
+
 	if ($_GET["age"] > 18) {
-		echo "Tere ".$_GET["username"]."! Olete lehekülje vaatamiseks piisavalt vana.";
+		echo "Tere, " .  $_GET['username'] . "!" . "</br>" . "Olete lehekülje vaatamiseks piisavalt vana.";
 	} else {
-		echo "Tere ".$_GET["username"]."! Kahjuks olete liiga noor selle lehekülje külastamiseks.";
+		echo "Tere, " .  $_GET['username'] . "!" . "</br>" . "Kahjuks olete liiga noor selle lehekülje külastmiseks.";
 	};
+	
+
+if (isset($_GET["username"], $_GET["age"])) {
+        $username = $_GET["username"];
+        $age = $_GET["age"]; 
+          echo " ";
+      	} 
+      		else {
+          		echo "Tere, tundmatu!" . "<br>" . "Kasutajanimi või vanus on puudu.";
+      	}
 	
 	?>
 </body>
